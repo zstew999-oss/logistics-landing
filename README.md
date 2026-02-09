@@ -3,7 +3,7 @@
 Commercial landing page for a logistics forwarding company focused on reliability, shipment control, and closing documents (B2B).
 
 ## Live Demo
-https://placeholder-link
+https://6989c7c5bfde8aa775d6e755--spectacular-nougat-0e64ee.netlify.app/
 
 ## About
 This project is a business-oriented landing page, not a tutorial or educational example.

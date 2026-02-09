@@ -1,0 +1,13 @@
+:root {
+  --container: 1120px;
+  --pad: 16px;
+
+  --bg: #0b0c10;
+  --text: #e8e8e8;
+  --muted: #b6b6b6;
+
+  --card: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+
+  --radius: 16px;
+}

@@ -1,0 +1,111 @@
+.hero {
+  padding: 56px 0 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.kicker {
+  margin: 0 0 10px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.h1 {
+  margin: 0 0 14px;
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.sub {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 62ch;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 18px;
+}
+
+.primary, .secondary {
+  border-radius: 999px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.primary {
+  background: white;
+  color: black;
+  border-color: transparent;
+}
+
+.secondary {
+  background: transparent;
+  color: var(--text);
+}
+
+.badges {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badges li {
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.right {}
+
+.card {
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+
+.cardTitle {
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.cardList {
+  margin: 0;
+  padding: 0 0 0 18px;
+  color: var(--muted);
+}
+
+.cardList li { margin: 8px 0; }
+
+.cardHint {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .h1 {
+    font-size: 36px;
+  }
+}

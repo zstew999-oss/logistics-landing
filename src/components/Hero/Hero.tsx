@@ -18,7 +18,12 @@ export function Hero() {
             </p>
 
             <div className={styles.actions}>
-              <button className={styles.primary}>Рассчитать перевозку</button>
+              <button
+                className={styles.primary}
+                onClick={() => document.getElementById("lead")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                Рассчитать перевозку
+              </button>
               <button className={styles.secondary}>Получить консультацию</button>
             </div>
 

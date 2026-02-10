@@ -45,7 +45,7 @@ export function LeadForm() {
       e.phoneOrEmail = "Введите корректный телефон или email";
 
     if (values.route.trim().length < 3) e.route = "Укажите маршрут (А → Б)";
-    if (values.cargo.trim().length < 2) e.cargo = "Укажите груз (что везём)";
+    if (values.cargo.trim().length < 2) e.cargo = "Укажите тип груза (что везём)";
 
     return e;
   }, [values]);
@@ -84,7 +84,7 @@ export function LeadForm() {
             <h2 className={styles.title}>Рассчитать перевозку</h2>
             <p className={styles.lead}>
               Оставьте контакты и параметры груза — логист свяжется с вами и предложит
-              условия по РФ и СНГ.
+              условия по доставке.
             </p>
 
             <ul className={styles.points}>

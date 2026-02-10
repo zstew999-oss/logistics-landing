@@ -3,10 +3,7 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 24px;
-  align-items: start;
+  display: block;
 }
 
 .kicker {
@@ -72,13 +69,17 @@
   font-size: 14px;
 }
 
-.right {}
+.right {
+  margin-top: 20px;
+}
 
-.card {
-  border-radius: var(--radius);
-  background: var(--card);
-  border: 1px solid var(--border);
-  padding: 16px;
+.left {
+  max-width: 980px;
+}
+
+.benefits {
+  margin-top: 40px;
+  max-width: 560px;
 }
 
 .cardTitle {

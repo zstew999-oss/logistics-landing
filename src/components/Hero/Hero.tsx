@@ -6,15 +6,15 @@ export function Hero() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.left}>
-            <p className={styles.kicker}>Экспедиторская компания для бизнеса</p>
+            <p className={styles.kicker}>Перевозки по РФ и СНГ для бизнеса</p>
 
             <h1 className={styles.h1}>
               Надёжная организация грузоперевозок для бизнеса — без срывов и хаоса
             </h1>
 
             <p className={styles.sub}>
-              Берём на себя подбор транспорта, контроль рейса и ответственность за доставку,
-              включая документооборот — чтобы вы не теряли деньги и клиентов.
+              Берём на себя ответственность за выполнение перевозки —
+              от подбора транспорта до доставки и закрытия рейса.
             </p>
 
             <div className={styles.actions}>
@@ -30,7 +30,7 @@ export function Hero() {
           </div>
 
           <div className={styles.right}>
-            <div className={styles.card}>
+            <div className={styles.benefits}>
               <p className={styles.cardTitle}>Что вы получаете</p>
               <ul className={styles.cardList}>
                 <li>Подбор транспорта под ваш груз</li>

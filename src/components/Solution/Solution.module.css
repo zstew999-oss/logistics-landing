@@ -1,0 +1,41 @@
+.solution {
+  padding: 28px 0;
+}
+
+.title {
+  max-width: 800px;
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.text {
+  max-width: 720px;
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.list {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.list li {
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--border);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -10,6 +10,7 @@ type FormValues = {
   route: string;
   cargo: string;
   comment: string;
+  nonce?: string
 };
 
 type LeadFormProps = {

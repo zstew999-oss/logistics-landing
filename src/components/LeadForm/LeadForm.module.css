@@ -24,17 +24,15 @@
 }
 
 .points {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 10px;
+  list-style: disc;
+  padding-left: 22px;
+  margin-top: 20px;
 }
 
 .points li {
-  padding-left: 14px;
-  position: relative;
-  color: var(--muted);
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85); /* если тёмный фон */
 }
 
 .points li::before {

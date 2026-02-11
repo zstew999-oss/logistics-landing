@@ -26,6 +26,7 @@
   background: var(--card);
   border: 1px solid var(--border);
   padding: 16px;
+  box-shadow: var(--shadow);
 }
 
 .label {

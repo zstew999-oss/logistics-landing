@@ -22,6 +22,12 @@
   background: var(--card);
   border: 1px solid var(--border);
   line-height: 1.4;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.list li:hover {
+  transform: translateY(-2px);
+  border-color: rgba(47, 111, 237, 0.35);
 }
 
 @media (max-width: 900px) {

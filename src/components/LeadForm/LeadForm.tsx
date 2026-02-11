@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import styles from "./LeadForm.module.css";
 
 type FormState = "idle" | "loading" | "success" | "error";
@@ -10,6 +10,10 @@ type FormValues = {
   route: string;
   cargo: string;
   comment: string;
+};
+
+type LeadFormProps = {
+  prefill?: Partial<FormValues>;
 };
 
 const initial: FormValues = {
@@ -31,9 +35,18 @@ function isPhone(v: string) {
   return /^[+]?[\d\s()-]{8,}$/.test(s) && (s.match(/\d/g)?.length ?? 0) >= 8;
 }
 
-export function LeadForm() {
-  const [values, setValues] = useState<FormValues>(initial);
+export function LeadForm({ prefill }: LeadFormProps) {
+  const [values, setValues] = useState<FormValues>({ ...initial, ...prefill });
   const [state, setState] = useState<FormState>("idle");
+
+  useEffect(() => {
+    if (!prefill) return;
+
+    setValues((prev) => ({
+      ...prev,
+      ...prefill,
+    }));
+  }, [prefill?.nonce]);
 
   const errors = useMemo(() => {
     const e: Partial<Record<keyof FormValues, string>> = {};
@@ -83,7 +96,7 @@ export function LeadForm() {
           <div className={styles.copy}>
             <h2 className={styles.title}>Рассчитать перевозку</h2>
             <p className={styles.lead}>
-              Оставьте контакты и параметры груза — логист свяжется с вами и предложит
+              Оставьте контакты и параметры груза — логист свяжется с Вами и предложит
               условия по доставке.
             </p>
 

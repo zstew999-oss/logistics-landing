@@ -1,6 +1,10 @@
 import styles from "./Hero.module.css";
 
-export function Hero() {
+type HeroProps = {
+  onConsultationClick: () => void;
+};
+
+export function Hero({ onConsultationClick }: HeroProps) {
   return (
     <section className={styles.hero}>
       <div className="container">
@@ -24,7 +28,9 @@ export function Hero() {
               >
                 Рассчитать перевозку
               </button>
-              <button className={styles.secondary}>Получить консультацию</button>
+              <button className={styles.secondary} onClick={onConsultationClick}>
+                Получить консультацию
+              </button>
             </div>
 
             <ul className={styles.badges}>

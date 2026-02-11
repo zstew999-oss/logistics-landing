@@ -9,7 +9,7 @@ import {Contacts} from "../components/Contacts/Contacts.tsx";
 import { useState } from "react";
 
 export function Home() {
-  const [prefill, setPrefill] = useState<{ comment?: string; nonce?: number }>({});
+  const [prefill, setPrefill] = useState<{ comment?: string; nonce?: string }>({});
 
   return (
     <>
@@ -17,7 +17,7 @@ export function Home() {
         onConsultationClick={() => {
           setPrefill({
             comment: "Нужна консультация. Перезвоните, пожалуйста.",
-            nonce: Date.now(),
+            nonce: String(Date.now()),
           });
 
           document
